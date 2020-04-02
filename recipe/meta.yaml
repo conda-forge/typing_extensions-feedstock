@@ -1,5 +1,5 @@
 {% set name = "typing_extensions" %}
-{% set version = "3.7.4.1" %}
+{% set version = "3.7.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 091ecc894d5e908ac75209f10d5b4f118fbdb2eb1ede6a63544054bb1edb41f2
+  sha256: 79ee589a3caca649a9bfd2a8de4709837400dfa00b6cc81962a1e6a1815969ae
 
 build:
-  number: 3
+  number: 0
 
 outputs:
   - name: {{ name }}
@@ -41,7 +41,7 @@ about:
   license: PSF
   license_family: PSF
   license_file: LICENSE
-  summary: 'Backported and Experimental Type Hints for Python'
+  summary: Backported and Experimental Type Hints for Python
   description: |
     The typing module was added to the standard library in Python 3.5 on a
     provisional basis and will no longer be provisional in Python 3.7. However,
