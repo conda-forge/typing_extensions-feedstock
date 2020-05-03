@@ -29,6 +29,8 @@ outputs:
 
   - name: typing-extensions
     requirements:
+      host:
+        python
       run:
         - {{ pin_subpackage(name, exact=True) }}
         - python
