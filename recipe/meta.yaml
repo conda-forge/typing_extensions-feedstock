@@ -40,7 +40,7 @@ outputs:
 
 about:
   home: https://github.com/python/typing/tree/master/typing_extensions
-  license: PSF
+  license: PSF-2.0
   license_family: PSF
   license_file: LICENSE
   summary: Backported and Experimental Type Hints for Python
