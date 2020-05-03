@@ -3,7 +3,7 @@ About typing_extensions
 
 Home: https://github.com/python/typing/tree/master/typing_extensions
 
-Package license: PSF
+Package license: PSF-2.0
 
 Feedstock license: BSD 3-Clause
 
@@ -276,5 +276,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@dougalsutherland](https://github.com/dougalsutherland/)
+* [@djsutherland](https://github.com/djsutherland/)
 
