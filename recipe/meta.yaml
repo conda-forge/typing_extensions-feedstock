@@ -30,12 +30,11 @@ outputs:
         - typing_extensions
 
   - name: typing-extensions
+    build:
+      noarch: python
     requirements:
-      host:
-        python
       run:
         - {{ pin_subpackage(name, exact=True) }}
-        - python
     test:
       imports:
         - typing_extensions
