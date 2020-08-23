@@ -5,7 +5,7 @@ Home: https://github.com/python/typing/tree/master/typing_extensions
 
 Package license: PSF-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Backported and Experimental Type Hints for Python
 
