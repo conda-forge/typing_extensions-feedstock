@@ -5,9 +5,13 @@ Home: https://github.com/python/typing/tree/master/typing_extensions
 
 Package license: PSF-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typing_extensions-feedstock/blob/master/LICENSE.txt)
 
 Summary: Backported and Experimental Type Hints for Python
+
+Development: https://github.com/python/typing
+
+Documentation: https://github.com/python/typing
 
 The typing module was added to the standard library in Python 3.5 on a
 provisional basis and will no longer be provisional in Python 3.7. However,
@@ -132,4 +136,5 @@ Feedstock Maintainers
 =====================
 
 * [@djsutherland](https://github.com/djsutherland/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
