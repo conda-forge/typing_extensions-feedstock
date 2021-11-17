@@ -13,20 +13,15 @@ Development: https://github.com/python/typing
 
 Documentation: https://github.com/python/typing
 
-The typing module was added to the standard library in Python 3.5 on a
-provisional basis and will no longer be provisional in Python 3.7. However,
-this means users of Python 3.5 - 3.6 who are unable to upgrade will not be
-able to take advantage of new types added to the typing module, such as
-typing.Text or typing.Coroutine.
+The typing module was added to the standard library in Python 3.5, but
+many new features have been added to the module since then.
+This means users of older Python versions who are unable to upgrade will not be
+able to take advantage of new types added to the ``typing`` module, such as
+typing.Protocol or typing.TypedDict.
 
 The typing_extensions module contains both backports of these changes
 as well as experimental types that will eventually be added to the typing
 module, such as Protocol.
-
-Users of other Python versions should continue to install and use the
-typing module from PyPi instead of using this one unless specifically
-writing code that must be compatible with multiple Python versions or
-requires experimental types.
 
 
 Current build status
