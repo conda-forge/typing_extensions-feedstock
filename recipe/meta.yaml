@@ -10,7 +10,7 @@ source:
   sha256: f1c24655a0da0d1b67f07e17a5e6b2a105894e6824b92096378bb3668ef02376
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: {{ name }}
@@ -20,10 +20,10 @@ outputs:
 
     requirements:
       host:
-        - python >=3.6
+        - python >=3.7
         - pip
       run:
-        - python >=3.6
+        - python >=3.7
 
     test:
       imports:
