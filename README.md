@@ -1,17 +1,15 @@
-About typing_extensions
-=======================
-
-Home: https://github.com/python/typing/tree/master/typing_extensions
-
-Package license: PSF-2.0
+About typing_extensions-feedstock
+=================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typing_extensions-feedstock/blob/main/LICENSE.txt)
 
+Home: https://github.com/python/typing_extensions
+
+Package license: PSF-2.0
+
 Summary: Backported and Experimental Type Hints for Python
 
-Development: https://github.com/python/typing
-
-Documentation: https://github.com/python/typing
+Development: https://github.com/python/typing_extensions
 
 The typing module was added to the standard library in Python 3.5, but
 many new features have been added to the module since then.
