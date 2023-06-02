@@ -1,5 +1,5 @@
 {% set name = "typing_extensions" %}
-{% set version = "4.6.2" %}
+{% set version = "4.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06006244c70ac8ee83fa8282cb188f697b8db25bc8b4df07be1873c43897060c
+  sha256: d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5
 
 build:
   number: 0
