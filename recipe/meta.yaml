@@ -1,5 +1,5 @@
 {% set name = "typing_extensions" %}
-{% set version = "4.7.1" %}
+{% set version = "4.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2
+  sha256: df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef
 
 build:
   number: 0
@@ -20,11 +20,11 @@ outputs:
 
     requirements:
       host:
-        - python >=3.7
+        - python >=3.8
         - flit-core >=3.4,<4
         - pip
       run:
-        - python >=3.7
+        - python >=3.8
 
     test:
       imports:
