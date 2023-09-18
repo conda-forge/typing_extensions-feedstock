@@ -20,11 +20,11 @@ outputs:
 
     requirements:
       host:
-        - python >=3.7
+        - python >=3.8
         - flit-core >=3.4,<4
         - pip
       run:
-        - python >=3.7
+        - python >=3.8
 
     test:
       imports:
