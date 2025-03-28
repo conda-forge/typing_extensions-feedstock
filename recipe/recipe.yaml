@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: 4.13.0
+
+recipe:
+  name: typing_extensions
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/t/typing-extensions/typing_extensions-${{ version }}.tar.gz
+  sha256: 0a4ac55a5820789d87e297727d229866c9650f6521b64206413c4fbada24d95b
+
+build:
+  number: 1
+  noarch: python
+
+outputs:
+  - package:
+      name: typing_extensions
+    build:
+      noarch: python
+      script:
+        - python -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+    requirements:
+      host:
+        - flit-core >=3.4,<4
+        - pip
+        - python ${{ python_min }}.*
+      run:
+        - python >=${{ python_min }}
+    tests:
+      - python:
+          imports: typing_extensions
+          pip_check: true
+          python_version:
+            - ${{ python_min }}.*
+            - 3.13.*
+
+  - package:
+      name: typing-extensions
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - ${{ pin_subpackage("typing_extensions", exact=True) }}
+    tests:
+      - python:
+          imports: typing_extensions
+          pip_check: true
+          python_version:
+            - ${{ python_min }}.*
+            - 3.13.*
+      - files:
+          source:
+            - src/
+            - "!src/typing_extensions.py"
+        requirements:
+          run:
+            - python ${{ python_min }}.*
+            - coverage
+        script:
+          - cd src
+          - coverage run --source=typing_extensions --branch -m unittest -vv
+          - coverage report --show-missing --skip-covered --fail-under=73
+
+about:
+  license: PSF-2.0
+  license_file: LICENSE
+  summary: Backported and Experimental Type Hints for Python
+  description: |
+    The typing module was added to the standard library in Python 3.5, but
+    many new features have been added to the module since then.
+    This means users of older Python versions who are unable to upgrade will not be
+    able to take advantage of new types added to the ``typing`` module, such as
+    typing.Protocol or typing.TypedDict.
+
+    The typing_extensions module contains both backports of these changes
+    as well as experimental types that will eventually be added to the typing
+    module, such as Protocol.
+
+  homepage: https://github.com/python/typing_extensions
+  repository: https://github.com/python/typing_extensions
+
+extra:
+  recipe-maintainers:
+    - djsutherland
+    - synapticarbors

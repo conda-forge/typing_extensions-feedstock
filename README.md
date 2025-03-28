@@ -21,7 +21,6 @@ The typing_extensions module contains both backports of these changes
 as well as experimental types that will eventually be added to the typing
 module, such as Protocol.
 
-
 Current build status
 ====================
 
