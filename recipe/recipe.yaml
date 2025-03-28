@@ -21,7 +21,8 @@ outputs:
       name: typing_extensions
     build:
       noarch: python
-      script: python -m pip install . -vv
+      script:
+        - python -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
     requirements:
       host:
         - flit-core >=3.4,<4
@@ -51,6 +52,18 @@ outputs:
           python_version:
             - ${{ python_min }}.*
             - 3.13.*
+      - files:
+          source:
+            - src/
+            - "!src/typing_extensions.py"
+        requirements:
+          run:
+            - python ${{ python_min }}.*
+            - coverage
+        script:
+          - cd src
+          - coverage run --source=typing_extensions --branch -m unittest -vv
+          - coverage report --show-missing --skip-covered --fail-under=73
 
 about:
   license: PSF-2.0
