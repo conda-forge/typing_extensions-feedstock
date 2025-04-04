@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 4.13.0
+  version: "4.13.1"
 
 recipe:
   name: typing_extensions
@@ -10,10 +10,10 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/t/typing-extensions/typing_extensions-${{ version }}.tar.gz
-  sha256: 0a4ac55a5820789d87e297727d229866c9650f6521b64206413c4fbada24d95b
+  sha256: 98795af00fb9640edec5b8e31fc647597b4691f099ad75f469a2616be1a76dff
 
 build:
-  number: 1
+  number: 0
   noarch: python
 
 outputs:
