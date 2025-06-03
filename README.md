@@ -1,4 +1,4 @@
-About typing_extensions-feedstock
+About typing-extensions-feedstock
 =================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typing_extensions-feedstock/blob/main/LICENSE.txt)
@@ -40,12 +40,12 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-typing--extensions-green.svg)](https://anaconda.org/conda-forge/typing-extensions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/typing-extensions.svg)](https://anaconda.org/conda-forge/typing-extensions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/typing-extensions.svg)](https://anaconda.org/conda-forge/typing-extensions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/typing-extensions.svg)](https://anaconda.org/conda-forge/typing-extensions) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-typing_extensions-green.svg)](https://anaconda.org/conda-forge/typing_extensions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/typing_extensions.svg)](https://anaconda.org/conda-forge/typing_extensions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/typing_extensions.svg)](https://anaconda.org/conda-forge/typing_extensions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/typing_extensions.svg)](https://anaconda.org/conda-forge/typing_extensions) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-typing__extensions-green.svg)](https://anaconda.org/conda-forge/typing_extensions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/typing_extensions.svg)](https://anaconda.org/conda-forge/typing_extensions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/typing_extensions.svg)](https://anaconda.org/conda-forge/typing_extensions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/typing_extensions.svg)](https://anaconda.org/conda-forge/typing_extensions) |
 
-Installing typing_extensions
+Installing typing-extensions
 ============================
 
-Installing `typing_extensions` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `typing-extensions` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
@@ -131,17 +131,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating typing_extensions-feedstock
+Updating typing-extensions-feedstock
 ====================================
 
-If you would like to improve the typing_extensions recipe or build a new
+If you would like to improve the typing-extensions recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/typing_extensions-feedstock are
+Note that all branches in the conda-forge/typing-extensions-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
