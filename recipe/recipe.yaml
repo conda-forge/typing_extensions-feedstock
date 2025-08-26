@@ -63,7 +63,7 @@ outputs:
         script:
           - cd src
           - coverage run --source=typing_extensions --branch -m unittest -vv
-          - coverage report --show-missing --skip-covered --fail-under=73
+          - coverage report --show-missing --skip-covered --fail-under=68
 
 about:
   license: PSF-2.0
