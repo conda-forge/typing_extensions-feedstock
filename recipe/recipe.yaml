@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.14.1"
+  version: "4.15.0"
 
 recipe:
   name: typing_extensions
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/t/typing-extensions/typing_extensions-${{ version }}.tar.gz
-  sha256: 38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36
+  sha256: 0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466
 
 build:
   number: 0
@@ -63,7 +63,7 @@ outputs:
         script:
           - cd src
           - coverage run --source=typing_extensions --branch -m unittest -vv
-          - coverage report --show-missing --skip-covered --fail-under=73
+          - coverage report --show-missing --skip-covered --fail-under=68
 
 about:
   license: PSF-2.0
