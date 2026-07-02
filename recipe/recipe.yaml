@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.15.0"
+  version: "4.16.0"
 
 recipe:
   name: typing_extensions
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/t/typing-extensions/typing_extensions-${{ version }}.tar.gz
-  sha256: 0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466
+  sha256: dc983d19a509c94dba722ee6abd33940f7c05a89e243c47e907eb4db6f1a43e5
 
 build:
   number: 0
@@ -25,7 +25,7 @@ outputs:
         - python -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
     requirements:
       host:
-        - flit-core >=3.4,<4
+        - flit-core >=3.11,<4
         - pip
         - python ${{ python_min }}.*
       run:
@@ -36,7 +36,7 @@ outputs:
           pip_check: true
           python_version:
             - ${{ python_min }}.*
-            - 3.13.*
+            - "*"
 
   - package:
       name: typing-extensions
@@ -51,7 +51,7 @@ outputs:
           pip_check: true
           python_version:
             - ${{ python_min }}.*
-            - 3.13.*
+            - "*"
       - files:
           source:
             - src/
